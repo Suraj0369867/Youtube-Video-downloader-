@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Free YouTube Video Downloader – Download YT Videos, MP3 & Shorts in HD</title>
+    <meta name="description" content="Free YouTube Video Downloader tool to download YouTube videos, Shorts, MP4, and MP3 online in HD quality. Fast, secure, and 100% free YT downloader.">
+    <meta name="keywords" content="YouTube Video Downloader, YouTube video download online, Free YouTube downloader, Download YouTube videos in HD, YouTube MP4 downloader, YouTube to MP3 converter, Download YouTube shorts, Online YT downloader tool, YT video download free, YT MP3 download online">
+    <meta name="author" content="Free Youtube Video Downloader">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Free YouTube Video Downloader – High Quality & Fast">
+    <meta property="og:description" content="Download YouTube videos and audio in 1080p, 4K, MP3. No software required.">
+    <meta property="og:type" content="website">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Particles Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fa-brands fa-youtube"></i> Free<span>YT</span>Loader
+            </a>
+            <div class="nav-actions">
+                <button id="themeToggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Free YouTube Video Downloader</h1>
+                <p>Download YouTube Videos, Shorts, MP4 & MP3 in HD Quality instantly.</p>
+                
+                <div class="downloader-card">
+                    <div class="input-group">
+                        <i class="fa-solid fa-link input-icon"></i>
+                        <input type="text" id="videoUrl" placeholder="Paste YouTube Link Here (e.g., https://youtu.be/...)" autocomplete="off">
+                        <button id="downloadBtn">
+                            <span class="btn-text">Download</span>
+                            <span class="loader hidden"></span>
+                        </button>
+                    </div>
+                    <div id="error-message" class="error-msg hidden"></div>
+                </div>
+
+                <!-- Result Container -->
+                <div id="resultContainer" class="result-container hidden">
+                    <div class="video-info">
+                        <img id="thumb" src="" alt="Thumbnail">
+                        <div class="meta">
+                            <h3 id="videoTitle">Video Title</h3>
+                            <p id="videoAuthor">Channel Name</p>
+                        </div>
+                    </div>
+                    <div class="download-options">
+                        <a href="#" id="dl-video" class="dl-btn video-btn" target="_blank">
+                            <i class="fa-solid fa-video"></i> Download Video (MP4)
+                        </a>
+                        <a href="#" id="dl-audio" class="dl-btn audio-btn" target="_blank">
+                            <i class="fa-solid fa-music"></i> Download Audio (MP3)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="steps-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>How to Download YouTube Videos?</h2>
+            </div>
+            <div class="grid-3">
+                <div class="step-card">
+                    <div class="icon-box"><i class="fa-solid fa-copy"></i></div>
+                    <h3>1. Copy URL</h3>
+                    <p>Copy the link of the video or Short from YouTube.</p>
+                </div>
+                <div class="step-card">
+                    <div class="icon-box"><i class="fa-solid fa-paste"></i></div>
+                    <h3>2. Paste Link</h3>
+                    <p>Paste the link into the search box above.</p>
+                </div>
+                <div class="step-card">
+                    <div class="icon-box"><i class="fa-solid fa-download"></i></div>
+                    <h3>3. Download</h3>
+                    <p>Choose MP4 or MP3 format and save your file.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / SEO Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="seo-block">
+                <h2>The Best Free YouTube Downloader Online</h2>
+                <p>Our <strong>Free YouTube Video Downloader</strong> allows you to download videos from YouTube in high quality (1080p, 4K) for free. Whether you need a <strong>YouTube to MP3 converter</strong> or a way to save <strong>YouTube Shorts</strong>, our tool handles it all directly in your browser.</p>
+                
+                <div class="grid-2">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-bolt"></i>
+                        <div>
+                            <h4>Fast & Free</h4>
+                            <p>Unlimited downloads with no speed restrictions.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <h4>100% Secure</h4>
+                            <p>No software installation required. Safe YT video download free.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <div>
+                            <h4>All Devices</h4>
+                            <p>Works on Mobile, Tablet, and Desktop (Windows, Mac, Android, iOS).</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-file-audio"></i>
+                        <div>
+                            <h4>MP4 & MP3</h4>
+                            <p>Supports YT MP3 download online and standard video formats.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-grid">
+                <details class="faq-item">
+                    <summary>Is this YouTube Downloader free?</summary>
+                    <p>Yes, our tool is 100% free to use. You can download YouTube videos in HD without any subscription.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I download YouTube Shorts?</summary>
+                    <p>Absolutely. Just paste the Shorts URL into the input box to download YouTube Shorts easily.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Does it support MP3 conversion?</summary>
+                    <p>Yes, we offer a YouTube to MP3 converter option. Select "Download Audio" after fetching the video.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Do I need to install software?</summary>
+                    <p>No. This is an online YT downloader tool that works directly in your web browser (Chrome, Safari, Firefox).</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo-footer">
+                    <i class="fa-brands fa-youtube"></i> Free<span>YT</span>Loader
+                </a>
+                <p>The best online tool to download YouTube videos, Shorts, and MP3 audio fast and securely.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Tools</h4>
+                <ul>
+                    <li><a href="index.html">YT Video Downloader</a></li>
+                    <li><a href="index.html">YT Shorts Downloader</a></li>
+                    <li><a href="index.html">YouTube to MP3</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Free Youtube Video Downloader. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+  </html>
