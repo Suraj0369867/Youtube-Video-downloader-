@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Free YouTube Video Downloader</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+    
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fa-brands fa-youtube"></i> Free<span>YT</span>Loader</a>
+            <div class="nav-actions">
+                <button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container page-content">
+        <div class="page-header">
+            <h1>Contact Us</h1>
+            <p>Have questions or suggestions? Get in touch.</p>
+        </div>
+        
+        <div class="text-block">
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! (Demo Only)');">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="How can we help you?" required></textarea>
+                </div>
+                <button type="submit" id="downloadBtn" style="border:none;">Send Message</button>
+            </form>
+            <br>
+            <p>Alternatively, email us at: <a href="mailto:support@freeytloader.com" style="color:var(--primary);">support@freeytloader.com</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2025 Free Youtube Video Downloader. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
